@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #000;
+  color: #fff;
+  min-height: 100vh;
+}
+
+.netflix-page {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #3a0a0a 0%, #1a0303 40%, #000 100%);
+}
+
+.netflix-header {
+  padding: 20px 48px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.netflix-logo {
+  color: #e50914;
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.netflix-main {
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+.signin-card {
+  width: 100%;
+  max-width: 440px;
+  display: flex;
+  flex-direction: column;
+}
+
+.signin-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.signin-subtitle {
+  font-size: 16px;
+  color: #b3b3b3;
+  margin-bottom: 32px;
+}
+
+.input-wrapper {
+  position: relative;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.input-wrapper input {
+  width: 100%;
+  height: 64px;
+  padding: 24px 16px 8px;
+  background: rgba(22, 22, 22, 0.7);
+  border: 1px solid #333;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.input-wrapper input:focus {
+  border-color: #fff;
+}
+
+.floating-label {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #8c8c8c;
+  font-size: 16px;
+  pointer-events: none;
+  transition: all 0.15s ease;
+}
+
+.input-wrapper input:focus + .floating-label,
+.floating-label.active {
+  top: 18px;
+  font-size: 12px;
+  transform: translateY(0);
+}
+
+.continue-btn {
+  width: 100%;
+  height: 56px;
+  background: #e50914;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+  margin-bottom: 24px;
+}
+
+.continue-btn:hover {
+  background: #f6121d;
+}
+
+.help-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  text-align: left;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 32px;
+  align-self: flex-start;
+}
+
+.chevron {
+  display: inline-block;
+  margin-left: 4px;
+  font-size: 14px;
+}
+
+.help-btn:hover {
+  text-decoration: underline;
+}
+
+.recaptcha-note {
+  color: #8c8c8c;
+  font-size: 13px;
+}
